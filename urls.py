@@ -11,9 +11,5 @@ urlpatterns = patterns('',
      (r'^accounts/', include('userena.urls')),
      (r'^admin/doc/', include('django.contrib.admindocs.urls')),
      (r'^admin/', include(admin.site.urls)),
-#Testing Ajaxifying stuff.
-     (r'^jquery_test/xhr_test$','jquery_test.views.xhr_test'),
-     (r'^jquery_test/xhr_post_test$','jquery_test.views.xhr_post_test'),
- 
  )
 
