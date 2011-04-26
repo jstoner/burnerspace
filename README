@@ -1,0 +1,29 @@
+virtualenv --no-site-packages --python=pyhton2.6 burnerspace
+cd burnerspace
+easy_install --upgrade pip
+pip install django
+pip install django-userena #This should also install easy_thumbnails and django-guardian as dependencies)
+pip install pil
+pip install django-notification
+
+Makes debugging easy-peasy
+pip install django-debug-toolbar
+
+Now we can grab the latest burnerspace build from github
+git clone git://github.com/spiralsyzygy/burnerspace.git
+
+Now we cd into the burnerspace, create the database, and start the dev server
+cd burnerspace
+python manage.py syncdb
+python manage.py runserver
+
+Then point your browser to: http://127.0.0.1:8000
+
+
+Starting from scratch:
+You should just be able to drop in the project dir from git. The above steps are the same in either case.
+django-admin.py startproject burnerspace
+cd burnerspace
+mkdir media
+mkdir static
+Edit settings.py and Urls.py - detailed later. Give it a test
