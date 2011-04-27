@@ -1,4 +1,4 @@
-virtualenv --no-site-packages --python=pyhton2.6 burnerspace
+virtualenv --no-site-packages --python=python2.6 burnerspace
 cd burnerspace
 easy_install --upgrade pip
 pip install django
